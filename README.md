@@ -1,12 +1,41 @@
 # Marsala Agent · Alpha 1.2
 
-一脑六手营销咨询 AI Agent。基于 Reasonix Code 平台构建的策略操作系统。
+一脑六手营销咨询 AI Agent。
+
+**本分支（`main`）不存储任何代码。** 请根据你使用的平台切换到对应分支：
+
+---
+
+## 分支导航
+
+| 分支 | 平台 | 说明 |
+|------|------|------|
+| [`reasonix`](../../tree/reasonix) | Reasonix Code | 原始开发版本。`MEMORY.md` + `BOOTSTRAP.md` 作为项目入口 |
+| [`claude-code`](../../tree/claude-code) | Claude Code | Claude Code 适配版。`CLAUDE.md` + `.claude/skills/marsala.md` 作为项目入口 |
+
+两个分支的 17 个技能文件（`.marsala/skills/`）完全共用，本质是同一套 Agent 的不同平台适配。
+
+---
+
+## 快速切换
+
+```bash
+# Reasonix Code 用户
+git clone https://gitcode.com/thyeon/Marsala-Agent.git
+cd Marsala-Agent
+git checkout reasonix
+
+# Claude Code 用户
+git clone https://gitcode.com/thyeon/Marsala-Agent.git
+cd Marsala-Agent
+git checkout claude-code
+```
 
 ---
 
 ## 这是什么
 
-Marsala 是一个为广告策略和品牌营销咨询场景设计的 AI Agent。从客户 Brief 拆解开始，经过商业战略判断、市场研究、消费者研究，最终输出品牌定位和创意方向。
+Marsala 是一个为广告策略和品牌营销咨询场景设计的 AI Agent。从客户 Brief 拆解开始，经过商业战略、市场研究、消费者研究、品牌策划、创意方向，最终输出媒介执行方案。
 
 **核心承诺：不确定时不编造。定位层可以为空。信息不足时承认信息不足。**
 
@@ -14,18 +43,14 @@ Marsala 是一个为广告策略和品牌营销咨询场景设计的 AI Agent。
 
 一脑六手 + 三层审查：
 
-- **🧠 大脑：客户总监** — 诊断引擎
-- **🤚 手一：商业战略** — 增长路径、利润归因、资源配置
-- **🤚 手二：市场研究** — 行业分析、竞品地图、趋势扫描
-- **🤚 手三：消费者研究** — 用户画像、购买动机、JTBD
-- **🤚 手四：品牌策划** — 品牌定位（含十一闸门校验体系 + 四层命题分类）
-- **🤚 手五：创意总监** — Big Idea、文案、视觉方向
-- **🤚 手六：媒介策划** — 媒介组合、预算规划、KOL 策略
-- **🛡️ 审查层** — P&L 经营审查、组织政治审查、危机应对审查
-
-## 快速开始
-
-在 Reasonix Code 或 Claude Code 中打开本目录，输入 `/startMSA` 或说「启动 Marsala」。
+- 🧠 **大脑：客户总监** — 诊断引擎，调度六手
+- 🤚 **手一：商业战略** — 增长路径、利润归因、资源配置
+- 🤚 **手二：市场研究** — 行业分析、竞品地图、趋势扫描
+- 🤚 **手三：消费者研究** — 用户画像、购买动机、JTBD
+- 🤚 **手四：品牌策划** — 品牌定位（含十一闸门校验体系）
+- 🤚 **手五：创意总监** — Big Idea、文案、视觉方向
+- 🤚 **手六：媒介策划** — 媒介组合、预算规划、KOL 策略
+- 🛡️ **审查层** — P&L 经营审查、组织政治审查、危机应对审查
 
 ## 作者
 
