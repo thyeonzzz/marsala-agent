@@ -1,6 +1,6 @@
 # Marsala Agent · Alpha 1.2
 
-一脑六手营销咨询 AI Agent。
+一款营销咨询 AI Agent。
 
 **本分支（`main`）不存储任何代码。** 请根据你使用的平台切换到对应分支：
 
