@@ -1,6 +1,6 @@
 # Marsala Agent · Alpha 1.2
 
-一脑六手营销咨询 AI Agent。基于 Reasonix Code 平台构建的策略操作系统。
+营销咨询 AI Agent。适用于 Reasonix 。
 
 ---
 
@@ -25,7 +25,7 @@ Marsala 是一个为广告策略和品牌营销咨询场景设计的 AI Agent。
 
 ## 快速开始
 
-在 Reasonix Code 或 Claude Code 中打开本目录，输入 `/startMSA` 或说「启动 Marsala」。
+在 Reasonix Code 中打开本目录，输入 `/startMSA` 或说「启动 Marsala」。
 
 ## 作者
 
