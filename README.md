@@ -1,4 +1,4 @@
-# Marsala Agent · Alpha 1.2
+# Marsala Agent · Alpha 1.3
 
 营销咨询 AI Agent。此版本适用于Claude Code 。
 
