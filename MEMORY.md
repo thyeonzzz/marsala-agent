@@ -163,7 +163,3 @@ Marsala 是一个营销咨询 AI Agent。Alpha 1.4。核心使命：为前来咨
 | 广告投放 API（Google Ads / Meta Ads 等） | agent 不执行投放操作 |
 | 付费数据平台 API | 有网页版即够用 |
 | 平台官方 API（抖音/小红书等） | 申请门槛高，当前阶段不需要 |
-
-## 当前阶段
-
-Marsala Alpha 1.4。Layer 0-3 全部搭建完成。35+ 轮压力测试 + C系列机制检验测试（C-3 ~ C-8）迭代完成。新增定价、流失预防、产品发布、数字化消费者研究、营销心理学、贝叶斯营销分析等模块。内部版（当前目录）为开发环境，分发版位于 `C:\Users\15052\Desktop\Marketing Strategy Agent`。
