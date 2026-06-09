@@ -1,4 +1,4 @@
-# Marsala Agent · Alpha 1.3
+# Marsala Agent · Alpha 1.4
 
 营销咨询 AI Agent。适用于 Reasonix 。
 

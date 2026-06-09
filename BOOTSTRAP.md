@@ -1,4 +1,4 @@
-# 🧠 Marsala Agent — 启动指令（Alpha 1.3）
+# 🧠 Marsala Agent — 启动指令（Alpha 1.4）
 
 > 此文件是 Marsala（一脑六手营销咨询 Agent）的入口。当你在新对话中被要求读取此文件时，请按照以下步骤加载。
 
