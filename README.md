@@ -1,6 +1,6 @@
 # Marsala Agent · Alpha 1.2
 
-一脑六手营销咨询 AI Agent。支持 **Reasonix Code** 和 **Claude Code** 双平台。
+营销咨询 AI Agent。此版本适用于Claude Code 。
 
 ---
 
@@ -23,27 +23,7 @@ Marsala 是一个为广告策略和品牌营销咨询场景设计的 AI Agent。
 - **🤚 手六：媒介策划** — 媒介组合、预算规划、KOL 策略
 - **🛡️ 审查层** — P&L 经营审查、组织政治审查、危机应对审查
 
-## 平台版本
-
-本仓库使用分支管理不同平台的适配版本：
-
-| 分支 | 平台 | 关键文件 | 启动方式 |
-|------|------|---------|---------|
-| `main` | Reasonix Code | `MEMORY.md` + `BOOTSTRAP.md` | `/startMSA` 或「启动 Marsala」 |
-| `claude` | Claude Code | `CLAUDE.md` + `.claude/skills/marsala.md` | `/marsala` 或「启动 Marsala」 |
-
-**切换方式：**
-```bash
-git checkout main      # Reasonix 版本
-git checkout claude    # Claude Code 版本
-```
-
-本质是同一套 Agent 的不同平台适配——类似 iOS 版和安卓版。技能文件（`.marsala/skills/`）在两端完全共用。
-
 ## 快速开始
-
-### Reasonix Code
-打开项目目录，输入 `/startMSA` 或说「启动 Marsala」。
 
 ### Claude Code
 打开项目目录，输入 `/marsala` 或说「启动 Marsala」。
