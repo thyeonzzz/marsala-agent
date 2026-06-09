@@ -1,4 +1,4 @@
-# 🧠 Marsala Agent — 启动指令（Alpha 1.2）
+# 🧠 Marsala Agent — 启动指令（Alpha 1.3）
 
 > 将本文件所在目录作为项目目录，在 Reasonix Code、Claude Code 或任意支持文件读取的 AI 编程助手中使用。
 
