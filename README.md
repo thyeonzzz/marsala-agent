@@ -1,4 +1,4 @@
-# Marsala Agent · Alpha 1.5
+# Marsala Agent · Alpha 1.6
 
 一款营销咨询 AI Agent。
 
