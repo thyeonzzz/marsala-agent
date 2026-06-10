@@ -13,7 +13,7 @@
 | [`reasonix`](../../tree/reasonix) | Reasonix Code | 基于Reasonix的原始开发版本。
 | [`claude-code`](../../tree/claude-code) | Claude Code | Claude Code 适配版。
 
-两个分支的 17 个技能文件（`.marsala/skills/`）完全共用，本质是同一套 Agent 的不同平台适配。
+两个分支的技能文件（`.marsala/skills/`）完全共用，本质是同一套 Agent 的不同平台适配。
 
 ---
 
