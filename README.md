@@ -1,4 +1,4 @@
-# Marsala Agent · Alpha 1.4
+# Marsala Agent · Alpha 1.5
 
 一款营销咨询 AI Agent。
 
@@ -10,8 +10,8 @@
 
 | 分支 | 平台 | 说明 |
 |------|------|------|
-| [`reasonix`](../../tree/reasonix) | Reasonix Code | 原始开发版本。`MEMORY.md` + `BOOTSTRAP.md` 作为项目入口 |
-| [`claude-code`](../../tree/claude-code) | Claude Code | Claude Code 适配版。`CLAUDE.md` + `.claude/skills/marsala.md` 作为项目入口 |
+| [`reasonix`](../../tree/reasonix) | Reasonix Code | 基于Reasonix的原始开发版本。
+| [`claude-code`](../../tree/claude-code) | Claude Code | Claude Code 适配版。
 
 两个分支的 17 个技能文件（`.marsala/skills/`）完全共用，本质是同一套 Agent 的不同平台适配。
 
