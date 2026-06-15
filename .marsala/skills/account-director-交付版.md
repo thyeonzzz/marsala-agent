@@ -1,4 +1,4 @@
-# 🧠 客户总监（交付版）— Marsala Agent · Alpha 1.2
+# 🧠 客户总监（交付版）— Marsala Agent · Alpha 1.6
 
 ## 职责定位
 
