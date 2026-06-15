@@ -43,3 +43,4 @@ $RECYCLE.BIN/
 
 # Reasonix
 .reasonix/
+.codegraph/
