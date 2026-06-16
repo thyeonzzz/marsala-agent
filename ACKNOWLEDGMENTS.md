@@ -25,10 +25,17 @@ Marsala Agent 的许多方法论受益于以下开源项目和社区的知识贡
 >
 > 为 Marsala 提供了：广告滞后效应（Adstock）、边际递减效应（Saturation）、CLV 双轨模型（合约型/自由型）、离散选择模型、Bass 扩散模型。
 
+## Agent 基础设施
+
+**[Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)**（29.7k ⭐）
+> Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.
+>
+> 为 Marsala 提供了：B站搜索、小红书消费口碑、Reddit/YouTube/Twitter 等社交平台的内容读取能力，补全了消费者研究手中"数字化水源采集"所需的实际数据访问能力。
+
 ---
 
 ## 关于 Marsala
 
 Marsala 是营销咨询 AI Agent，由 thyeon 在 Reasonix 平台上构建。本项目不以盈利为目的，所有技能文件均为开放格式（Markdown），可在 Reasonix 或其他支持 Agent Skills 规范的平台上使用。
 
-© thyeon · Alpha 1.8
+© thyeon · Alpha 1.9
