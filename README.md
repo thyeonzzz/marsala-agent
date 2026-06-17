@@ -1,33 +1,30 @@
-# Marsala Agent · Alpha 1.9
+# Marsala Agent · Alpha 1.10
 
-一款营销咨询 AI Agent。
+营销策略 AI Agent。从客户 Brief 拆解到媒介预算分配，覆盖完整的品牌咨询工作流。
+
+---
 
 **本分支（`main`）不存储任何代码。** 请根据你使用的平台切换到对应分支：
 
----
-
 ## 分支导航
 
-| 分支 | 平台 | 说明 |
-|------|------|------|
-| [`reasonix`](../../tree/reasonix) | Reasonix Code | 基于Reasonix的原始开发版本。
-| [`claude-code`](../../tree/claude-code) | Claude Code | Claude Code 适配版。
+| 分支 | 平台 | 启动方式 |
+|------|------|---------|
+| [`reasonix`](../../tree/reasonix) | Reasonix Code | 打开目录自动加载，或输入 `/marsala` |
+| [`claude-code`](../../tree/claude-code) | Claude Code | 打开目录自动加载，或输入 `/marsala` |
 
-两个分支的技能文件（`.marsala/skills/`）完全共用，本质是同一套 Agent 的不同平台适配。
-
----
+两个分支的技能文件（`.marsala/skills/`）完全共用，本质是同一套 Agent 的不同平台适配——类似 iOS 和 Android 的关系。
 
 ## 快速切换
 
 ```bash
-# Reasonix Code 用户
 git clone https://gitcode.com/thyeon/Marsala-Agent.git
 cd Marsala-Agent
+
+# Reasonix Code 用户
 git checkout reasonix
 
 # Claude Code 用户
-git clone https://gitcode.com/thyeon/Marsala-Agent.git
-cd Marsala-Agent
 git checkout claude-code
 ```
 
@@ -35,23 +32,34 @@ git checkout claude-code
 
 ## 这是什么
 
-Marsala 是一个为广告策略和品牌营销咨询场景设计的 AI Agent。从客户 Brief 拆解开始，经过商业战略、市场研究、消费者研究、品牌策划、创意方向，最终输出媒介执行方案。
+Marsala 是一个营销策略 AI Agent。和大多数 AI 营销工具不同，Marsala 不生成文案、不自动发邮件、不操作投放后台。它做的是更上游的事——**判断该做什么、为什么这样做、怎么验证判断是对的。**
 
 **核心承诺：不确定时不编造。定位层可以为空。信息不足时承认信息不足。**
 
 ## 架构
 
-一脑六手 + 四层审查：
+```
+🧠 客户总监（Brain）        诊断 · 调度 · 审核 · 整合提案
+   │
+   ├── 🤚 手一：商业战略      增长路径 · 利润归因 · 定价策略 · 流失预防 · GTM 发布
+   ├── 🤚 手二：市场研究      行业分析 · 竞品地图 · 趋势扫描 · 创新扩散预测
+   ├── 🤚 手三：消费者研究    用户画像 · 购买动机 · JTBD · RFM 分群 · CLV 双轨模型
+   ├── 🤚 手四：品牌策划      品牌定位 · 价值主张 · 品牌叙事 · 差异化设计
+   │                         （含九道强制自检闸门 + 十一校验 + 四层命题分类）
+   ├── 🤚 手五：创意总监      Big Idea · 文案 · 视觉方向 · 创意评估 · 参与式设计
+   └── 🤚 手六：媒介策划      媒介组合 · 预算分配 · KOL 策略 · 滞后与递减分析
+   
+🛡️ 审查层                   P&L 经营审查 · 组织政治审查 · 危机应对审查 · 证据治理
+📊 贝叶斯分析引擎             营销组合模型 (MMM) · 客户生命周期价值 (CLV)
+```
 
-- 🧠 **大脑：客户总监** — 诊断引擎，调度六手
-- 🤚 **手一：商业战略** — 增长路径、利润归因、资源配置
-- 🤚 **手二：市场研究** — 行业分析、竞品地图、趋势扫描
-- 🤚 **手三：消费者研究** — 用户画像、购买动机、JTBD
-- 🤚 **手四：品牌策划** — 品牌定位（含十一闸门校验体系）
-- 🤚 **手五：创意总监** — Big Idea、文案、视觉方向
-- 🤚 **手六：媒介策划** — 媒介组合、预算规划、KOL 策略
-- 🛡️ **审查层** — P&L 经营审查、组织政治审查、危机应对审查、证据等级审查
+## 核心亮点
+
+- **可证伪的品牌定位体系** — 九道自检闸门 + 十一校验 + 三十条审核规则，不靠直觉做定位
+- **完整咨询工作流** — 六只手可独立调用，也可线性串联，每步产出是下一步输入
+- **贝叶斯量化分析** — PyMC-Marketing 引擎支持 MMM 和 CLV 建模
+- **证据治理** — 统一的 E1-E6 证据等级体系，证据不足时主动降级或熔断
 
 ## 作者
 
-©thyeon
+© thyeon
