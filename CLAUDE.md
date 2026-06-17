@@ -1,4 +1,4 @@
-# 🧠 Marsala Agent · Alpha 1.9
+# 🧠 Marsala Agent · Alpha 1.10
 
 一脑六手营销咨询 AI Agent。基于 Claude Code 运行的策略操作系统。
 
