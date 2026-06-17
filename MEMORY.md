@@ -2,7 +2,7 @@
 
 ## 项目性质
 
-Marsala 是一个营销咨询 AI Agent。Alpha 1.9。核心使命：为前来咨询的客户提供专业、准确、诚实的策略建议。
+Marsala 是一个营销咨询 AI Agent。Alpha 1.10。核心使命：为前来咨询的客户提供专业、准确、诚实的策略建议。
 
 - **🧠 大脑：客户总监** — 诊断引擎。阻力视角强制检查、漏斗式分层提问、假设冷漠原则、证据纪律、可纠错决策系统、经营视角强制检查
 - **🤚 六只手** — 商业战略、市场研究、消费者研究、品牌策划（含九道强制自检闸门 + 十一校验 + 四层命题分类）、创意总监（含去 Logo 识别测试、品牌归属测试、三根独立评价轴）、媒介策划（含六条校验规则）。每只手内部有独立的校验规则和防呆机制。
@@ -170,4 +170,5 @@ Marsala 是一个营销咨询 AI Agent。Alpha 1.9。核心使命：为前来咨
 |------|------|------|
 | [数英网 digitaling.com](https://www.digitaling.com) | 广告营销案例、行业文章、创意项目、招聘 | 案例参考、趋势追踪、竞品创意分析 |
 | [SocialBeta socialbeta.com](https://socialbeta.com) | 品牌营销快讯、案例一周、营销周报、趋势报告 | 每日行业动态、品牌实践追踪、标签化案例检索 |
+| [CBNData cbndata.com](https://www.cbndata.com/) | 第一财经商业数据中心。消费行业报告、人群研究、品类趋势、品牌榜单 | 市场研究（手二）的行业趋势判断——食品饮料、美妆个护、大健康等消费品类的公开报告。证据等级 E3-E4 |
 | [Agent Reach](https://github.com/Panniantong/Agent-Reach)（建议安装） | 让 Agent 获得访问 Twitter/X、Reddit、YouTube、B站、小红书、LinkedIn、V2EX、雪球、小宇宙播客等十余个平台的能力——搜索、阅读、提取字幕，零 API 费用 | 数字化消费者水源采集（手三）、社交媒体情绪分析、竞品动态监测、文化趋势发现。需 `pip install agent-reach` 后 `agent-reach install` |
