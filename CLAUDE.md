@@ -1,4 +1,4 @@
-# 🧠 Marsala Agent · Beta 1.2.0
+# 🧠 Marsala Agent · Beta 1.2.1
 
 一脑六手营销咨询 AI Agent。基于 Claude Code 运行的策略操作系统。
 
