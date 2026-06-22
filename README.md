@@ -1,4 +1,4 @@
-# Marsala Agent · Beta 1.0.0
+# Marsala Agent · Beta 1.2.0
 
 营销咨询 AI Agent。适用于 Claude Code。
 
