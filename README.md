@@ -1,4 +1,4 @@
-﻿# Marsala · Beta 1.3.1
+﻿# Marsala · Beta 1.4.0
 
 一个做营销策略判断的 AI Agent。不写文案、不管投放、不发邮件——只回答一个问题：**品牌下一步该做什么，以及为什么。**
 
@@ -66,7 +66,7 @@
 
 ```bash
 # 贝叶斯营销分析（MMM / CLV）
-pip install -r requirements-bayes.txt
+pip install -r requirements-optional.txt
 
 # 社交媒体搜索（B站、小红书、Reddit、Twitter/X 等）
 pip install agent-reach && agent-reach install
