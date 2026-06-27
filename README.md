@@ -1,4 +1,4 @@
-# Marsala Agent · Beta 1.2.1
+# Marsala Agent · Beta 1.4.0
 
 营销策略 AI Agent。从客户 Brief 拆解到媒介预算分配，覆盖完整的品牌咨询工作流。
 
