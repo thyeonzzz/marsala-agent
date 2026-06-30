@@ -1,9 +1,9 @@
 ---
 name: marsala
-description: 输入 /marsala 加载 Marsala 营销咨询 Agent
+description: 输入 /marsala 加载 Marsala 营销咨询 Proto-Agent
 ---
 
-# /marsala — 加载 Marsala Agent
+# /marsala — 加载 Marsala Proto-Agent
 
 ## 触发方式
 
@@ -13,7 +13,7 @@ description: 输入 /marsala 加载 Marsala 营销咨询 Agent
 
 ## 加载流程
 
-### 第一步：定位 Marsala Agent 根目录
+### 第一步：定位 Marsala Proto-Agent 根目录
 
 读取系统环境变量 `MARSALA_HOME`，该变量指向 Marsala 的安装根目录。
 
@@ -34,8 +34,8 @@ description: 输入 /marsala 加载 Marsala 营销咨询 Agent
 
 ## 加载规则
 
-1. 执行策略任务时，加载对应角色的内部版
-2. 向客户展示服务内容时，使用交付版
+1. 执行策略任务时，加载对应角色的技能文件
+2. 向客户展示服务内容时，遵循 `delivery-rules.md` 通用输出规则
 3. 完整项目遵循标准流程：客户总监 → 商业战略 → 市场研究 → 消费者研究 → 品牌策划 → 创意总监 → 媒介策划
 4. 涉及利润/成本 → P&L 审查
 5. 涉及内部意见冲突 → 组织政治审查
