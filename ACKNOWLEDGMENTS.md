@@ -1,6 +1,6 @@
 # 致谢 · Acknowledgments
 
-Marsala Proto-Agent 的许多方法论受益于以下开源项目和社区的知识贡献。在此致谢。
+Marsala 可执行知识体系的许多方法论受益于以下开源项目和社区的知识贡献。在此致谢。
 
 ---
 
@@ -36,6 +36,6 @@ Marsala Proto-Agent 的许多方法论受益于以下开源项目和社区的知
 
 ## 关于 Marsala
 
-Marsala 是营销咨询 Proto-Agent，由 thyeon 在 Reasonix 平台上构建。本项目不以盈利为目的，所有技能文件均为开放格式（Markdown），可在 Reasonix 或其他支持 Agent Skills 规范的平台上使用。
+Marsala 是营销咨询可执行知识（Executable Knowledge），由 thyeon 在 Reasonix 平台上构建。本项目不以盈利为目的，所有技能文件均为开放格式（Markdown），可在 Reasonix 或其他支持 Agent Skills 规范的平台上使用。
 
-© thyeon · Beta 1.1.0
+© thyeon · Beta 2.0.0

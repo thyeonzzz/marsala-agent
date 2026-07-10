@@ -1,9 +1,9 @@
 ---
 name: marsala
-description: 输入 /marsala 加载 Marsala 营销咨询 Proto-Agent
+description: 输入 /marsala 加载 Marsala 可执行知识
 ---
 
-# /marsala — 加载 Marsala Proto-Agent
+# /marsala — 加载 Marsala 可执行知识
 
 ## 触发方式
 
@@ -13,7 +13,7 @@ description: 输入 /marsala 加载 Marsala 营销咨询 Proto-Agent
 
 ## 加载流程
 
-### 第一步：定位 Marsala Proto-Agent 根目录
+### 第一步：定位 Marsala 可执行知识根目录
 
 读取系统环境变量 `MARSALA_HOME`，该变量指向 Marsala 的安装根目录。
 
