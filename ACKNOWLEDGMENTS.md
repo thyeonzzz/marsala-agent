@@ -1,6 +1,6 @@
 # 致谢 · Acknowledgments
 
-Marsala Agent 的许多方法论受益于以下开源项目和社区的知识贡献。在此致谢。
+Marsala Proto-Agent 的许多方法论受益于以下开源项目和社区的知识贡献。在此致谢。
 
 ---
 
