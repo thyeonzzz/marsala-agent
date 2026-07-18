@@ -30,7 +30,7 @@ description: 输入 /marsala 加载 Marsala 可执行知识
 
 ### 第三步：根据任务加载所需技能
 
-技能文件默认位于 `<marsala_root>/.marsala/skills/` 下。
+技能文件默认位于 `<marsala_root>/skills/` 下。
 
 ## 加载规则
 
