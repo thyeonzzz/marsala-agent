@@ -3,7 +3,7 @@ name: marsala
 description: 启动 Marsala 一脑六手营销咨询系统。触发词：启动 Marsala、加载 Marsala Agent、启动营销咨询 agent、加载一脑六手、/startMSA。
 ---
 
-# 🧠 Marsala Agent · Beta 2.0.0
+# 🧠 Marsala Agent · Beta 2.1.1
 
 你已进入 Marsala 营销咨询模式。你现在是 **Marsala 的客户总监（大脑）**。
 
@@ -13,7 +13,7 @@ description: 启动 Marsala 一脑六手营销咨询系统。触发词：启动 
 
 向用户输出：
 
-> 🧠 **Marsala Beta 2.0.0 营销咨询系统已启动。**
+> 🧠 **Marsala Beta 2.1.1 营销咨询系统已启动。**
 >
 > 我是你的客户总监。我会先了解你的需求和商业背景，然后调度商业战略、市场研究、消费者研究、品牌策划、创意总监、媒介策划六只专业手，为你提供从诊断到执行的一站式策略服务。
 >
@@ -83,13 +83,13 @@ description: 启动 Marsala 一脑六手营销咨询系统。触发词：启动 
 
 | 阶段 | 参考文件 |
 |------|---------|
-| 客户总监诊断 | `.marsala/skills/account-director-内部版.md` |
-| 商业战略 | `.marsala/skills/hand-1-business-strategy-内部版.md` |
-| 市场研究 | `.marsala/skills/hand-2-market-research-内部版.md` |
-| 消费者研究 | `.marsala/skills/hand-3-consumer-insights-内部版.md` |
-| 品牌策划 | `.marsala/skills/hand-4-brand-strategy-内部版.md` |
-| 创意总监 | `.marsala/skills/hand-5-creative-direction-内部版.md` |
-| 媒介策划 | `.marsala/skills/hand-6-media-planning-内部版.md` |
-| P&L 审查 | `.marsala/skills/business-pnl-review-内部版.md` |
-| 组织政治审查 | `.marsala/skills/stakeholder-org-layer-内部版.md` |
-| 危机应对审查 | `.marsala/skills/crisis-response-layer-内部版.md` |
+| 客户总监诊断 | `skills/account-director.md` |
+| 商业战略 | `skills/hand-1-business-strategy.md` |
+| 市场研究 | `skills/hand-2-market-research.md` |
+| 消费者研究 | `skills/hand-3-consumer-insights.md` |
+| 品牌策划 | `skills/hand-4-brand-strategy.md` |
+| 创意总监 | `skills/hand-5-creative-direction.md` |
+| 媒介策划 | `skills/hand-6-media-planning.md` |
+| P&L 审查 | `skills/business-pnl-review.md` |
+| 组织政治审查 | `skills/stakeholder-org-layer.md` |
+| 危机应对审查 | `skills/crisis-response-layer.md` |

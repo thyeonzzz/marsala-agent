@@ -1,4 +1,4 @@
-# 🧠 Marsala · Beta 2.0.0
+# 🧠 Marsala · Beta 2.1.1
 
 一脑六手营销咨询可执行知识（Executable Knowledge）。基于 Claude Code 运行的策略操作系统。
 
@@ -67,7 +67,7 @@
 
 **回答：** 「增长从哪里来？利润从哪里来？」
 
-参考文件：`.marsala/skills/hand-1-business-strategy-内部版.md`
+参考文件：`skills/hand-1-business-strategy.md`
 
 核心能力：
 - **增长路径判断**：市场渗透 / 市场开发 / 产品延伸 / 多元化 / 效率提升——五选一主方向
@@ -83,7 +83,7 @@
 
 **回答：** 「市场发生了什么？」
 
-参考文件：`.marsala/skills/hand-2-market-research-内部版.md`
+参考文件：`skills/hand-2-market-research.md`
 
 核心能力：
 - **行业分析**：行业生命周期、TAM/SAM/SOM、市场集中度
@@ -103,7 +103,7 @@
 
 **回答：** 「人们为什么买？」
 
-参考文件：`.marsala/skills/hand-3-consumer-insights-内部版.md`
+参考文件：`skills/hand-3-consumer-insights.md`
 
 核心能力：
 - **用户画像**：人口+行为+心理+需求四维，2-3 个画像
@@ -124,7 +124,7 @@
 
 **回答：** 「品牌应该成为什么？」
 
-参考文件：`.marsala/skills/hand-4-brand-strategy-内部版.md`
+参考文件：`skills/hand-4-brand-strategy.md`
 
 核心能力：
 - **品牌定位**：Al Ries & Jack Trout 定位理论，消费者心智中的位置
@@ -157,7 +157,7 @@
 
 **回答：** 「如何把策略变成让人记住的东西？」
 
-参考文件：`.marsala/skills/hand-5-creative-direction-内部版.md`
+参考文件：`skills/hand-5-creative-direction.md`
 
 核心能力：
 - **Big Idea 开发**：策略性+延展性+记忆性+差异性，一个品牌一个阶段只需一个
@@ -179,7 +179,7 @@
 
 **回答：** 「广告应该在哪里出现？」
 
-参考文件：`.marsala/skills/hand-6-media-planning-内部版.md`
+参考文件：`skills/hand-6-media-planning.md`
 
 核心能力：
 - **媒介生态理解**：抖音/小红书/B站/微信/微博各平台特征
@@ -211,7 +211,7 @@
 
 **触发信号：** 利润下降/客单价下降/忙但不赚钱/收入没降利润降/促销折扣团购
 
-参考文件：`.marsala/skills/business-pnl-review-内部版.md`
+参考文件：`skills/business-pnl-review.md`
 
 五项检查：
 0. **利润归因分解**（收到利润下降信号时必做）：毛利率/营销费用率/人员成本率/固定成本率/EBITDA
@@ -226,7 +226,7 @@
 
 **触发信号：** 内部意见不一致/多部门利益冲突/预算跨部门分配/职业经理人
 
-参考文件：`.marsala/skills/stakeholder-org-layer-内部版.md`
+参考文件：`skills/stakeholder-org-layer.md`
 
 五项检查：
 1. 谁是真正的决策者？
@@ -241,7 +241,7 @@
 
 **触发信号：** 代言人负面/品牌热搜/产品曝光/内部事件公开
 
-参考文件：`.marsala/skills/crisis-response-layer-内部版.md`
+参考文件：`skills/crisis-response-layer.md`
 
 三项检查：
 1. **危机五级分类**：L1谣言→观察 / L2爆料→预案 / L3证据→冷处理 / L4实锤→切割 / L5违法→全面切割+法务
@@ -302,13 +302,13 @@
 ## 技能文件索引
 
 详细方法论见以下文件：
-- `.marsala/skills/account-director-内部版.md` — 客户总监完整 SOP
-- `.marsala/skills/hand-1-business-strategy-内部版.md` — 商业战略详细方法论
-- `.marsala/skills/hand-2-market-research-内部版.md` — 市场研究详细方法论
-- `.marsala/skills/hand-3-consumer-insights-内部版.md` — 消费者研究详细方法论
-- `.marsala/skills/hand-4-brand-strategy-内部版.md` — 品牌策划详细方法论（含十一闸门）
-- `.marsala/skills/hand-5-creative-direction-内部版.md` — 创意总监详细方法论
-- `.marsala/skills/hand-6-media-planning-内部版.md` — 媒介策划详细方法论
-- `.marsala/skills/business-pnl-review-内部版.md` — P&L 经营审查
-- `.marsala/skills/stakeholder-org-layer-内部版.md` — 组织政治审查
-- `.marsala/skills/crisis-response-layer-内部版.md` — 危机应对审查
+- `skills/account-director.md` — 客户总监完整 SOP
+- `skills/hand-1-business-strategy.md` — 商业战略详细方法论
+- `skills/hand-2-market-research.md` — 市场研究详细方法论
+- `skills/hand-3-consumer-insights.md` — 消费者研究详细方法论
+- `skills/hand-4-brand-strategy.md` — 品牌策划详细方法论（含十一闸门）
+- `skills/hand-5-creative-direction.md` — 创意总监详细方法论
+- `skills/hand-6-media-planning.md` — 媒介策划详细方法论
+- `skills/business-pnl-review.md` — P&L 经营审查
+- `skills/stakeholder-org-layer.md` — 组织政治审查
+- `skills/crisis-response-layer.md` — 危机应对审查
