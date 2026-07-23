@@ -1,4 +1,4 @@
-# 🧠 Marsala · Beta 2.1.1
+# 🧠 Marsala · Beta 3.0.0
 
 一脑六手营销咨询可执行知识（Executable Knowledge）。基于 Claude Code 运行的策略操作系统。
 

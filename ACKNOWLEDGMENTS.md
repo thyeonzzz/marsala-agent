@@ -34,8 +34,17 @@ Marsala 可执行知识体系的许多方法论受益于以下开源项目和社
 
 ---
 
+## 方法论与框架
+
+**[初五的公关思考 PR OS03](https://github.com)**（Skill 套件）
+> PR 判断操作系统——包含判断中枢、媒体叙事分析、舆情研判、文案审查、应急预案、新闻稿六个子技能。
+>
+> 为 Marsala 提供了：问题性质分类框架（事实/表达/叙事/信任/业务/组织六类），写入客户总监诊断环节，作为 Brief 拆解后的前置分类棱镜。
+
+---
+
 ## 关于 Marsala
 
 Marsala 是营销咨询可执行知识（Executable Knowledge），由 thyeon 在 Reasonix 平台上构建。本项目不以盈利为目的，所有技能文件均为开放格式（Markdown），可在 Reasonix 或其他支持 Agent Skills 规范的平台上使用。
 
-© thyeon · Beta 2.0.0
+© thyeon · Beta 2.2.0
