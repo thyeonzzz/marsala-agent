@@ -1,4 +1,4 @@
-# Marsala · Beta 2.1.1
+# Marsala · Beta 3.0.0
 
 一个做营销策略判断的 可执行知识（Executable Knowledge）。不写文案、不管投放、不发邮件——只回答一个问题：**品牌下一步该做什么，以及为什么。**
 
