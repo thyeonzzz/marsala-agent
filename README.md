@@ -1,4 +1,4 @@
-# Marsala · Beta 3.0.0
+# Marsala · Beta 3.1.0
 
 一套品牌营销策略可执行知识（Executable Knowledge）。只做判断——给出方向、原因、纲领性路径，不涉及具体执行方案。
 
