@@ -124,6 +124,7 @@ Marsala 是一套品牌营销策略可执行知识（Executable Knowledge）。B
 | 🤚 品牌策划 | `hand-4-brand-strategy.md` |
 | 🤚 创意总监 | `hand-5-creative-direction.md` |
 | 🎨 创意层（生成纪律 + 品味选择） | `creative-layer.md` |
+| 🔭 自设 Brief（预测性练习） | `self-brief.md` |
 | 🤚 媒介策划 | `hand-6-media-planning.md` |
 | 📋 对外输出规则 | `delivery-rules.md` |
 | 📚 品牌案例库 | `case-library.md` |

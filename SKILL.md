@@ -41,6 +41,7 @@ metadata:
 | 案例参考 | `skills/case-library.md` |
 | 平台专项（抖音/小红书） | `skills/platform-douyin.md` / `platform-xiaohongshu.md` |
 | 项目启动 / 判定模式 | `skills/delivery-modes.md`（品牌咨询 / 营销策划 / 承接） |
+| 无客户时的向前看练习 | `skills/self-brief.md`（自设 brief：按节律提前想品牌部的 brief） |
 | 交付前（完整项目） | `skills/argument-layer.md`（逻辑说明书） |
 | 项目结束复盘 | `memory/STYLE.md`（风格档案）+ `memory/LESSONS.md` |
 
