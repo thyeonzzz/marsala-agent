@@ -24,7 +24,7 @@ Reasonix 表现最好，但它「只适合作为开发环境，不适合作为�
 | 6 | **工具映射**：AnySearch / web_fetch / chrome-devtools → 内置搜索 / 网页读取 / 文件 / 文档 / 代码工具 | 平台数据缺口明确声明，不假装能拿到 |
 | 7 | **清理**：删除 `5hand.txt`（五手时代草稿）；`platform-wechat.md` 移入 `skills/_archive/`（已禁用）；README 术语统一（十一闸门 → 九道闸门） | 消除会让 AI 混淆的过时与矛盾信息 |
 | 8 | **交付质量门**：SKILL.md 内置六项交付前自检（Ghost Deck / 证据标注 / 假设概率 / 纠错绑定 / 商业四问 / 标题即断言） | 把 Reasonix 里分散的校验收拢成一条交付前的强制流程 |
-| 9 | **项目级作用域**：技能安装在 `.codex/skills/marsala/`（Codex/ChatGPT 项目级技能目录），不写入全局技能目录 | 全局目录（`~/.agents/skills`、`~/.codex/skills`）会被所有项目和其他 Agent 工具共享；项目级目录让 Marsala 只在本项目生效，形成 ChatGPT 专属通道 |
+| 9 | **Codex 全局通道**：技能安装到 `~/.codex/skills/marsala/`（Codex 专属技能目录），不写入 `~/.agents/skills` | `~/.agents/skills` 是跨工具共享目录（reasonix / hermes / Claude Code 都会读）；`~/.codex/skills` 只有 Codex 读取，对本机所有 Codex 项目生效——按用户要求走 Codex 全局通道 |
 
 ---
 
@@ -42,15 +42,17 @@ Reasonix 表现最好，但它「只适合作为开发环境，不适合作为�
 
 ### ChatGPT / Codex 桌面版
 
-本项目文件夹本身就是 `chatgpt` 分支的仓库，技能包位于 `.codex/skills/marsala/`：
+`chatgpt` 分支是技能源（SKILL.md / MEMORY.md / skills/ / memory/ / agents/ 在仓库根目录），
+安装到 Codex 全局技能目录：
 
-1. 在 ChatGPT / Codex 桌面版中打开本文件夹（项目级技能目录自动生效）
-2. 新建会话（技能列表在新会话中刷新）
+1. 在本目录运行 `.\install-codex.ps1`（复制到 `C:\Users\<你的用户名>\.codex\skills\marsala\`）
+2. 新建任意 Codex 会话（技能列表在新会话中刷新）
 3. 说「启动 Marsala」，或直接提出营销策略需求
 
-**不要**复制到 `C:\Users\<你的用户名>\.agents\skills\marsala\` 或 `~\.codex\skills\marsala\`——
-那是全局技能目录，会让 Marsala 出现在你所有项目里，也会覆盖/干扰其他平台共用的同名技能。
-如需让技能在其他项目也生效，再考虑全局安装；本项目只走项目级专属通道。
+**不要**复制到 `C:\Users\<你的用户名>\.agents\skills\marsala\`——那是跨工具共享目录，
+会覆盖/干扰其他平台共用的同名技能。`~\.codex\skills\marsala` 是 Codex 专属位置：
+reasonix / hermes / workbuddy / Claude Code 都不会读它，但本机所有 Codex 项目都会生效（设计如此）。
+若只想让单个项目生效，把技能放进该项目根目录的 `.codex\skills\marsala\` 并删除全局副本。
 
 ### 其他 ChatGPT 形式（通用）
 
@@ -63,15 +65,16 @@ Reasonix 分支是内容基准，把新内容搬进 ChatGPT 通道时按以下�
 
 | reasonix 分支 | chatgpt 分支（本目录） |
 |---------------|----------------------|
-| `MEMORY.md` | `.codex/skills/marsala/MEMORY.md` |
-| `skills/` | `.codex/skills/marsala/skills/` |
-| `marsala.md` 中仍有效的内容 | 合并进 `.codex/skills/marsala/SKILL.md` |
+| `MEMORY.md` | `MEMORY.md`（仓库根目录） |
+| `skills/` | `skills/`（仓库根目录） |
+| `marsala.md` 中仍有效的内容 | 合并进 `SKILL.md`（仓库根目录） |
 
 注意事项：
 - `memory/` 是 ChatGPT 会话的活记忆，同步时不要整体覆盖，只补种子内容
 - reasonix 特有的工具引用（`remember`、`AnySearch`、`MARSALA_HOME`）不要带入，
   对应能力在 ChatGPT 版已映射为内置搜索 / 文件工具 / `memory/` 目录
-- 同步后运行本机校验：`quick_validate.py .codex/skills/marsala`
+- 同步后运行本机校验：`quick_validate.py .`（仓库根目录），再执行 `.\install-codex.ps1` 刷新全局安装
+- 会话记忆累积在 `~\.codex\skills\marsala\memory\`，需要入库时把该目录内容复制回仓库 `memory/` 再提交
 
 ---
 

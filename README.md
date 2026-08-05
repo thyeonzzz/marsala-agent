@@ -91,23 +91,24 @@ Marsala 不是另一个 AI 营销工具。大多数同类产品帮你**执行**�
 
 ### 在 ChatGPT / Codex 桌面版安装
 
-本仓库的 `chatgpt` 分支就是 ChatGPT 专属通道，安装零复制：
+本仓库的 `chatgpt` 分支是技能源，安装到 Codex 全局技能目录：
 
-1. 在 ChatGPT / Codex 桌面版中打开本文件夹（已打开本文件夹即为安装完成）
-2. 技能从项目级目录 `.codex/skills/marsala/` 自动加载，只在本项目内生效
-3. 新建一个会话（技能列表在新会话中刷新），说「启动 Marsala」，或直接提出营销策略需求（如「帮我的品牌做一次竞品分析」）
-4. 首次使用请确认：技能加载完成后应输出「Marsala 已启动……」
+1. 在本目录运行 `.\install-codex.ps1`（或手动把 `SKILL.md`、`MEMORY.md`、`skills/`、`memory/`、`agents/` 复制到 `C:\Users\<你的用户名>\.codex\skills\marsala\`）
+2. 新建任意 Codex 会话（技能列表在新会话中刷新），说「启动 Marsala」，或直接提出营销策略需求（如「帮我的品牌做一次竞品分析」）
+3. 首次使用请确认：技能加载完成后应输出「Marsala 已启动……」
 
-> **为什么是项目级而不是全局技能目录？**
-> `C:\Users\<你的用户名>\.agents\skills\` 和 `~\.codex\skills\` 是全局目录，
-> 装在那里会让 Marsala 出现在你机器上的每一个项目里（也会被其他 Agent 工具读到）。
-> 本项目刻意放在 `.codex/skills/marsala/`——这是 Codex/ChatGPT 桌面版的项目级技能目录，
-> 只有打开本文件夹时才会加载，是一个真正「ChatGPT 专属」的通道。
+> **作用域：Codex 全局，但不是跨工具共用。**
+> 安装目标是 `~\.codex\skills\marsala\`——这是 Codex 自己的技能目录，只有 Codex 读取，
+> reasonix / hermes / workbuddy / Claude Code 都不会加载它；
+> 但它对本机**所有 Codex 项目**生效（这是明确选择）。
+> 不要安装到 `~\.agents\skills\`——那是跨工具共享目录，会污染其他 Agent。
+> 如果以后想改成「只在一个项目生效」：删除 `~\.codex\skills\marsala`，
+> 把技能文件放进该项目目录下的 `.codex\skills\marsala\` 即可。
 
 ### 更新（reasonix 有改动时）
 
 把 reasonix 分支的最新内容按 [PORTING-NOTES.md](PORTING-NOTES.md) 的映射同步进
-`.codex/skills/marsala/` 后提交即可。技能包随仓库版本化，不需要复制到任何全局目录。
+仓库后提交，再运行一次 `.\install-codex.ps1` 刷新全局安装（会话记忆不会被覆盖）。
 
 ### 在其他平台
 

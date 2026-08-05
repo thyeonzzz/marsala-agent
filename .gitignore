@@ -44,3 +44,6 @@ $RECYCLE.BIN/
 # Reasonix
 .reasonix/
 .codegraph/
+
+# Codex 本地状态（技能已全局安装，仓库不再携带 .codex 目录）
+.codex/
