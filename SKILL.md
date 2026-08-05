@@ -39,6 +39,7 @@ metadata:
 | 品牌危机 | `skills/crisis-response-layer.md` |
 | 案例参考 | `skills/case-library.md` |
 | 平台专项（抖音/小红书） | `skills/platform-douyin.md` / `platform-xiaohongshu.md` |
+| 项目启动 / 判定模式 | `skills/delivery-modes.md`（品牌咨询 / 营销策划 / 承接） |
 | 交付前（完整项目） | `skills/argument-layer.md`（逻辑说明书） |
 | 项目结束复盘 | `memory/STYLE.md`（风格档案）+ `memory/LESSONS.md` |
 
@@ -48,6 +49,8 @@ metadata:
 ---
 
 ## 工作流
+
+**先判定交付模式**（品牌咨询 / 营销策划 / 全管线承接），再决定走哪条管线——判定表见 `skills/delivery-modes.md`。不要默认所有客户走完六手全程。
 
 ### 标准完整流程
 
