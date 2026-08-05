@@ -92,21 +92,15 @@ Marsala 是一套品牌营销策略可执行知识（Executable Knowledge）。B
 
 ## 记忆分类框架（Layer 1）
 
-记忆由 Runtime（Reasonix 的 `remember` 工具）管理，按 user/project/reference/feedback 四类存储。Marsala 自身不再维护"抽屉"式的记忆分类。
+本分支（chatgpt）运行在 ChatGPT 上，无 Reasonix 的 `remember` 工具。记忆以文件形式持久化在 `memory/` 目录，跨会话有效、可人工审阅、可随仓库版本化：
 
-**内容归档去向（只有两个方向，不按抽屉标记每条记忆）：**
+| 文件 | 内容 | 使用时机 |
+|------|------|---------|
+| `memory/USER.md` | 负责人风格、输出偏好、工作习惯 | 每次会话开始读取 |
+| `memory/CLIENTS.md` | 当前及过往客户的品牌、竞品、项目背景 | 项目结束时归档 |
+| `memory/LESSONS.md` | 从实践中总结的策略经验与教训 | 项目结束时归档 |
 
-| 去向 | 内容 | 使用 `remember` 的 type |
-|------|------|------|
-| **客户档案** | 当前及过往客户的品牌、竞品、项目背景 | `project` |
-| **经验沉淀** | 从实践中总结的策略经验与教训 | `feedback` |
-
-**记忆优先级原则：**
-- 高优先级：每次会话自动加载（贴墙上的便签，数量不宜多）
-- 中优先级：相关话题触发时加载
-- 低优先级：主动查询时才加载
-
-**记忆准入标准：** 存入前问一句——「下次做类似项目时，这条信息能帮我省时间或避免犯错吗？」能则存，不能则弃。
+**记忆准入标准（不变）：** 存入前问一句——「下次做类似项目时，这条信息能帮我省时间或避免犯错吗？」能则存，不能则弃。
 
 ## 技能体系（Layer 2）
 
@@ -117,6 +111,8 @@ Marsala 是一套品牌营销策略可执行知识（Executable Knowledge）。B
 | 角色 | 文件 |
 |------|--------|
 | 🧠 客户总监 | `account-director.md` |
+| 🛡️ 证据治理层（统一版） | `evidence-governance.md` |
+| 📋 审核校验规则（客户总监审查用） | `review-rules.md` |
 | 💰 Business & P&L Review | `business-pnl-review.md` |
 | 🏛️ Stakeholder & Organization | `stakeholder-org-layer.md` |
 | 🚨 Crisis Response | `crisis-response-layer.md` |
@@ -131,7 +127,7 @@ Marsala 是一套品牌营销策略可执行知识（Executable Knowledge）。B
 | 📄 可执行知识定义 | `executable-knowledge.md` |
 | 📕 小红书平台导航 | `platform-xiaohongshu.md` |
 | 🎵 抖音平台导航 | `platform-douyin.md` |
-| 💬 微信生态导航 | `platform-wechat.md` ⛔ 禁用 |
+| 💬 微信生态导航 | `skills/_archive/platform-wechat.md` ⛔ 已归档禁用 |
 
 > **对外交付：** 不再使用独立的"交付版"技能文件。向客户展示能力或交付方案时，遵循 `delivery-rules.md` 中的通用规则——从技能文件提取方法论，剥掉内部操作语言，转为对外语气。同一套方法论，换一种语言。 |
 
@@ -147,7 +143,7 @@ Marsala 是一套品牌营销策略可执行知识（Executable Knowledge）。B
 8. **每个技能文件末尾有「经验沉淀区」**，完成项目后复盘，将经验写入对应区域
 9. 六只手可单独调用，也可通过客户总监按流程串联（商业战略→市场→消费者→品牌→创意→媒介）
 10. **所有策略输出必须附带证据等级标签** — 证据治理层在每次输出时运行，标注最高依赖证据等级。证据不足时主动降级或熔断
-11. **每次客户项目对话结束时，自动执行「项目结束强制归档」**（见客户总监文件末尾）——将客户信息存入 project 级记忆，经验教训存入 feedback 级记忆，并更新相关技能文件的经验沉淀区。**不需要用户提醒。**
+11. **每次客户项目对话结束时，自动执行「项目结束强制归档」**（见客户总监文件末尾）——客户信息更新到 `memory/CLIENTS.md`，经验教训写入 `memory/LESSONS.md`，并更新相关技能文件的经验沉淀区。**不需要用户提醒。**
 
 ## 外部连接（Layer 3）
 
@@ -155,9 +151,13 @@ Marsala 是一套品牌营销策略可执行知识（Executable Knowledge）。B
 
 | 工具 | 用途 | 状态 |
 |------|------|------|
-| 网页搜索 | 搜索使用 AnySearch。小红书/B站/微博等特定平台走 Agent Reach。大众点评数据由用户手动提供 | ✅ 内置 + Agent Reach |
-| 网页抓取（web_fetch） | 读研报、竞品官网、社媒内容 | ✅ 内置 |
-| 浏览器操控（chrome-devtools） | 看网页视觉、截图、页面交互分析 | ✅ 内置 |
+| 网页搜索（内置） | 行业信息、竞品动态、趋势扫描、反证搜索 | ✅ 内置 |
+| 网页读取（内置） | 读研报、竞品官网、社媒内容 | ✅ 内置 |
+| 文件读写 | 记忆归档（`memory/`）、交付件管理 | ✅ 内置 |
+| 文档/表格/演示文稿生成 | 交付客户提案、竞品对比表、汇报材料 | ✅ 内置 |
+| 代码运行 | 量化分析：RFM、CLV、A/B 检验、广告滞后效应计算 | ✅ 内置 |
+
+**平台数据说明：** 小红书/抖音/B站等平台的内部数据（搜索量、达人报价、电商销量）ChatGPT 内置搜索通常无法完整获取。能搜则搜并标注来源与等级；搜不到的明确说明缺口，交由用户提供（生意参谋、千瓜、蝉妈妈等），不编造数字。
 
 ### 暂不接入（原因）
 
@@ -174,4 +174,4 @@ Marsala 是一套品牌营销策略可执行知识（Executable Knowledge）。B
 | [数英网 digitaling.com](https://www.digitaling.com) | 广告营销案例、行业文章、创意项目、招聘 | 案例参考、趋势追踪、竞品创意分析 |
 | [SocialBeta socialbeta.com](https://socialbeta.com) | 品牌营销快讯、案例一周、营销周报、趋势报告 | 每日行业动态、品牌实践追踪、标签化案例检索 |
 | [CBNData cbndata.com](https://www.cbndata.com/) | 第一财经商业数据中心。消费行业报告、人群研究、品类趋势、品牌榜单 | 市场研究（手二）的行业趋势判断——食品饮料、美妆个护、大健康等消费品类的公开报告。证据等级 E3-E4 |
-| [Agent Reach](https://github.com/Panniantong/Agent-Reach)（建议安装） | 让 Agent 获得访问 Twitter/X、Reddit、YouTube、B站、小红书、LinkedIn、V2EX、雪球、小宇宙播客等十余个平台的能力——搜索、阅读、提取字幕，零 API 费用 | 数字化消费者水源采集（手三）、社交媒体情绪分析、竞品动态监测、文化趋势发现。需 `pip install agent-reach` 后 `agent-reach install` |
+| [Agent Reach](https://github.com/Panniantong/Agent-Reach)（可选） | 让 Agent 获得访问 Twitter/X、Reddit、YouTube、B站、小红书、LinkedIn、V2EX、雪球、小宇宙播客等十余个平台的能力 | 仅当运行环境支持 `pip` 安装时使用；否则以内置搜索 + 用户提供数据代替 |
