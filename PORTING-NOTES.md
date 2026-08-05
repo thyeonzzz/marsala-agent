@@ -19,12 +19,13 @@ Reasonix 表现最好，但它「只适合作为开发环境，不适合作为�
 | 1 | **入口机制**：`/marsala` + 环境变量 → `SKILL.md`（ChatGPT/Codex 原生技能格式） | 无需环境变量，任务相关时自动触发，用户说「启动 Marsala」即可 |
 | 2 | **双阶段加载协议**：固定核心（MEMORY + 证据治理 + 输出规则）+ 按任务按需加载 | 省上下文：核心常驻约 40KB，审核规则等重文件只在需要时读 |
 | 3 | **证据治理统一**：account-director / hand-2 / hand-3 三处互相矛盾的证据表 → `skills/evidence-governance.md` 唯一权威 | 三套权重并存会让 AI 读到互相冲突的规则；统一后只剩一份标准 |
-| 4 | **大文件拆分**：account-director.md 100KB → 核心 82KB + `review-rules.md`（审核校验规则 365 行）+ `evidence-governance.md` | 客户总监常驻文件不再背负 350 行审核规则；审核时才加载 |
+| 4 | **大文件拆分**：account-director.md 100KB → 核心 82KB + `review-rules.md`（审核校验规则）+ `evidence-governance.md` | 客户总监常驻文件不再背负审核规则；审核时才加载 |
 | 5 | **记忆文件化**：`remember` 工具 → `memory/` 目录（USER / CLIENTS / LESSONS） | ChatGPT 无 remember；文件化记忆跨会话持久、可人工审阅、可随仓库版本化 |
 | 6 | **工具映射**：AnySearch / web_fetch / chrome-devtools → 内置搜索 / 网页读取 / 文件 / 文档 / 代码工具 | 平台数据缺口明确声明，不假装能拿到 |
 | 7 | **清理**：删除 `5hand.txt`（五手时代草稿）；`platform-wechat.md` 移入 `skills/_archive/`（已禁用）；README 术语统一（十一闸门 → 九道闸门） | 消除会让 AI 混淆的过时与矛盾信息 |
 | 8 | **交付质量门**：SKILL.md 内置六项交付前自检（Ghost Deck / 证据标注 / 假设概率 / 纠错绑定 / 商业四问 / 标题即断言） | 把 Reasonix 里分散的校验收拢成一条交付前的强制流程 |
 | 9 | **Codex 全局通道**：技能安装到 `~/.codex/skills/marsala/`（Codex 专属技能目录），不写入 `~/.agents/skills` | `~/.agents/skills` 是跨工具共享目录（reasonix / hermes / Claude Code 都会读）；`~/.codex/skills` 只有 Codex 读取，对本机所有 Codex 项目生效——按用户要求走 Codex 全局通道 |
+| 10 | **review-rules 压缩**：47KB → ~7KB。删除案例溯源与叙事冗余；定位审核与 hand-4 九道闸门去重；元规则（26/27/30/31/32）独立成章；校验编号全部保留 | 校验体系从「合规机器」回归「审核工具」——核心契约确立后，正确性由闸门承担，审查层只做查漏 |
 
 ---
 
