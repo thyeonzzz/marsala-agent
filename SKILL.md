@@ -33,6 +33,7 @@ metadata:
 | 消费者洞察 / 用户画像 | `skills/hand-3-consumer-insights.md` |
 | 品牌定位 / 品牌架构 | `skills/hand-4-brand-strategy.md` |
 | 创意方向 / Big Idea | `skills/hand-5-creative-direction.md` |
+| 创意生成与品味（营销策划模式） | `skills/creative-layer.md` |
 | 媒介策划 / 预算 / KOL | `skills/hand-6-media-planning.md` |
 | P&L / 利润下降 | `skills/business-pnl-review.md` |
 | 组织政治 / 内部冲突 | `skills/stakeholder-org-layer.md` |
