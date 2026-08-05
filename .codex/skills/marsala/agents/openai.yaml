@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marsala 品牌策略系统"
+  short_description: "品牌营销策略可执行知识系统（一脑六手 + 证据治理）"
+  default_prompt: "使用 $marsala 启动 Marsala，先诊断这个项目要解决的真实商业问题。"
